@@ -153,14 +153,14 @@ function update(){
         if(!bullet.used && bonusAlien.alive && detectCollision(bullet, bonusAlien)){
             bullet.used = true;
             bonusAlien.alive = false;
-            score += 500;
+            score += 1000;
         }
 
         if(!bullet.used && gunAlien.alive && detectCollision(bullet, gunAlien)){
             bullet.used = true;
             gunAlien.alive = false;
             ship.upgrade = "gun";
-            score += 200;
+            score += 300;
         }
 
         for(let j = 0; j < alienArray.length; j++){
@@ -190,7 +190,7 @@ function update(){
 
     context.fillStyle = "white";
     context.font="16px courier";
-    context.fillText(score, 5, 20);
+    context.fillText(score, 10, 10);
 
     if(bonusAlien.alive){
         bonusAlien.x += bonusAlienVelocityX;

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+
+body{
+    font-family: "Oxanium", sans-serif;
+    text-align: center;
+}
+
+#board{
+    background-color: black;
+}
+
+button{
+    font-size: 1.5em;
+    padding: 0.5em;
+    margin: 0.5em;
+    border-radius: 0.5em;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: #2E8EE3;
+    transition: background-color 0.2s;
+    top: 10%;
+    left: 10%;
+    position: absolute;
+}
+
+*{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
